@@ -1,0 +1,33 @@
+.overlay {
+  height: 70%;
+  width: 45%;
+  background-color: rgb(255, 255, 255);
+  border: solid #2b292b 2px;
+  border-radius: 5px;
+}
+
+.square {
+  height: 100%;
+  width: 100%;
+  border: solid #2b292b 2px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(8, 8, 8);
+  position: relative;
+  top: -15px;
+  left: -15px;
+}
+.card-title {
+  font-size: 1.6rem;
+  color: #e30613;
+}
+.card-text {
+  font-size: 1.13rem;
+  line-height: 1.7rem;
+  text-align: left;
+}
+.card-link {
+  color: #e60000;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
