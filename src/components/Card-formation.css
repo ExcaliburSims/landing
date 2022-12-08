@@ -11,6 +11,7 @@
   width: 100%;
   border: solid #2b292b 2px;
   border-radius: 5px;
+  padding: 4rem !important;
   background-color: rgb(255, 255, 255);
   color: rgb(8, 8, 8);
   position: relative;
@@ -30,4 +31,70 @@
   color: #e60000;
   font-size: 1.25rem;
   line-height: 1.5rem;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 2560px) {
+  .overlay {
+    height: 60%;
+    width: 45%;
+    margin: 2%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .overlay {
+    height: 70%;
+    width: 90%;
+    margin-top: 5% !important;
+  }
+  .square {
+    padding: 4rem !important;
+  }
+  .card-link {
+    font-size: 1.2rem;
+    text-align: right !important;
+    padding-bottom: 10px !important;
+    font-weight: 600;
+  }
+  .link-container {
+    padding-top: 0 !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .overlay {
+    width: 90%;
+    margin-bottom: 10%;
+  }
+  .square {
+    padding: 1rem !important;
+  }
+  .card-content {
+    padding: 2% !important;
+  }
+
+  .card-icon {
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    display: none;
+  }
+  .card-title {
+    font-size: 1.3rem;
+  }
+  .card-text {
+    font-size: 1rem;
+    line-height: 1.7rem;
+  }
+  .card-link {
+    font-size: 1.2rem;
+    text-align: right !important;
+    padding-bottom: 10px !important;
+    font-weight: 600;
+  }
+  .link-container {
+    padding-top: 0 !important;
+  }
 }

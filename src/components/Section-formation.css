@@ -4,6 +4,7 @@
 .title {
   color: #e60000;
   font-size: 2.4rem;
+  padding-top: 5%;
 }
 .subtitle {
   max-width: 50%;
@@ -12,13 +13,72 @@
   color: #200e32;
   line-height: 1.7rem;
 }
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 .stars-top {
+  width: 25%;
+  height: 30%;
   position: absolute;
   z-index: -10;
 }
 .stars-bottom {
+  width: 25%;
+  height: 30%;
   position: absolute;
   right: 0%;
-  top: 45%;
+  top: 60%;
   z-index: -10;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 576px) {
+  .title {
+    font-size: 2rem;
+    padding-top: 2%;
+  }
+  .subtitle {
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    padding: 2rem 0 3rem 0;
+  }
+  .stars-bottom {
+    display: none;
+  }
+  .stars-top {
+    display: none;
+  }
+  .card-container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .subtitle {
+    max-width: 90%;
+  }
+  .card-container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .title {
+    font-size: 5rem;
+  }
+  .subtitle {
+    max-width: 100%;
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
 }

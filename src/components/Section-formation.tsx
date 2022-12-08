@@ -7,7 +7,7 @@ const Section = () => {
   return (
     <div className="section">
       <img src={Startop} alt="stars" className="stars-top" />
-      <div className="container h-100 d-flex flex-column justify-content-around h-25">
+      <div className="container h-100 d-flex flex-column justify-content-around">
         <div>
           <h2 className="text-center title">Qu'allez-vous apprendre ?</h2>
           <p className="text-center subtitle">
@@ -15,7 +15,7 @@ const Section = () => {
             commencer par le début.
           </p>
         </div>
-        <div className="d-flex flex-row justify-content-between align-items-center h-75">
+        <div className="h-75 card-container">
           <Card />
           <Card />
         </div>
