@@ -19,14 +19,14 @@ const Card = (props: {
             <p className="mt-4 card-text">{props.paragraph}</p>
           </div>
         </div>
-        <div className="text-end pt-5 link-container">
+        <div className="text-end pt-3 link-container">
           {props.link === true ? (
-            <>
+            <div className="card-button">
               <a href="#" className="card-link pe-3">
                 Suivre le cours
               </a>
               <img src={PlayIcon} alt="Laptop icon" className="play" />
-            </>
+            </div>
           ) : (
             <span className="text-muted card-link">Bientôt disponible</span>
           )}

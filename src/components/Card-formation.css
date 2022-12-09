@@ -1,5 +1,5 @@
 .overlay {
-  height: 70%;
+  height: 100% !important;
   width: 45%;
   background-color: rgb(255, 255, 255);
   border: solid #2b292b 2px;
@@ -40,19 +40,18 @@
 /* Responsive */
 
 @media screen and (min-width: 2560px) {
-  .overlay {
-    height: 85%;
-    width: 45%;
-    margin: 2%;
+  /* .overlay {
+    height: 100% !important;
+    width: 55%;
   }
   .square {
-    padding: 4rem !important;
+    padding: 3rem !important;
   }
   .card-title {
-    font-size: 4rem;
+    font-size: 2.5rem;
   }
   .card-text {
-    font-size: 2.13rem;
+    font-size: 1.8rem;
     line-height: 2.7rem;
     text-align: left;
   }
@@ -62,7 +61,7 @@
   }
   .link-container {
     padding-bottom: 2rem !important;
-  }
+  } */
 }
 
 @media screen and (max-width: 1440px) {
@@ -109,7 +108,7 @@
 
 @media screen and (max-width: 576px) {
   .overlay {
-    width: 90%;
+    width: 95%;
     margin-bottom: 10%;
   }
   .square {
@@ -133,13 +132,13 @@
     line-height: 1.7rem;
   }
   .card-link {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: right !important;
-    padding-bottom: 10px !important;
     font-weight: 600;
   }
   .play {
-    display: none;
+    width: 10%;
+    height: 10%;
   }
   .link-container {
     padding-top: 0 !important;
@@ -148,6 +147,7 @@
 @media screen and (max-width: 320px) {
   .overlay {
     width: 95%;
+    height: 45%;
     margin-bottom: 10%;
   }
   .square {

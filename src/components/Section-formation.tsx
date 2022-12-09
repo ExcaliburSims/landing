@@ -16,15 +16,15 @@ const Section = () => {
   return (
     <div className="section">
       <img src={Startop} alt="stars" className="stars-top" />
-      <div className="container h-100 d-flex flex-column justify-content-around">
-        <div>
+      <div className="container d-flex flex-column justify-content-around">
+        <div className="">
           <h2 className="text-center title">Qu'allez-vous apprendre ?</h2>
           <p className="text-center subtitle">
             Si vous êtes novice en matière de codage, nous vous recommandons de
             commencer par le début.
           </p>
         </div>
-        <div className="h-75 card-container">
+        <div className="card-container">
           <Card
             icon={LaptopIcon}
             title={title1}
