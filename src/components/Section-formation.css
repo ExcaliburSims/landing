@@ -17,9 +17,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   margin-top: 4rem;
-  height: max-content;
+  height: auto;
 }
 .stars-top {
   width: 25%;
@@ -75,6 +75,6 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-top: 2rem;
+    margin: 2rem 0 0 1rem;
   }
 }
