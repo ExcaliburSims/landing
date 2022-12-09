@@ -1,8 +1,12 @@
 import "./Card-formation.css";
 import PlayIcon from "./assets/svg/play.svg";
 
-const Card = (props: any) => {
-  const linked = false;
+const Card = (props: {
+  icon: string;
+  title: string;
+  paragraph: string;
+  link: boolean;
+}) => {
   return (
     <div className="overlay">
       <div className="square ">
@@ -16,9 +20,11 @@ const Card = (props: any) => {
           </div>
         </div>
         <div className="text-end pt-5 link-container">
-          {linked !== false ? (
+          {props.link === true ? (
             <>
-              <span className="card-link pe-3">Suivre le cours</span>
+              <a href="#" className="card-link pe-3">
+                Suivre le cours
+              </a>
               <img src={PlayIcon} alt="Laptop icon" className="play" />
             </>
           ) : (

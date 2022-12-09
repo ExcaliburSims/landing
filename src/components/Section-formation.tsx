@@ -25,8 +25,18 @@ const Section = () => {
           </p>
         </div>
         <div className="h-75 card-container">
-          <Card icon={LaptopIcon} title={title1} paragraph={paragraph1} />
-          <Card icon={AlgoIcon} title={title2} paragraph={paragraph2} />
+          <Card
+            icon={LaptopIcon}
+            title={title1}
+            paragraph={paragraph1}
+            link={true}
+          />
+          <Card
+            icon={AlgoIcon}
+            title={title2}
+            paragraph={paragraph2}
+            link={false}
+          />
         </div>
       </div>
       <img src={Starbottom} alt="stars" className="stars-bottom" />

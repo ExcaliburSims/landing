@@ -31,21 +31,65 @@
   color: #e60000;
   font-size: 1.25rem;
   line-height: 1.5rem;
+  text-decoration: none;
 }
-
+.card-link:hover {
+  color: #e60000;
+  text-decoration: underline;
+}
 /* Responsive */
 
 @media screen and (min-width: 2560px) {
   .overlay {
-    height: 60%;
+    height: 85%;
     width: 45%;
     margin: 2%;
+  }
+  .square {
+    padding: 4rem !important;
+  }
+  .card-title {
+    font-size: 4rem;
+  }
+  .card-text {
+    font-size: 2.13rem;
+    line-height: 2.7rem;
+    text-align: left;
+  }
+  .card-link {
+    font-size: 2rem;
+    line-height: 1.8rem;
+  }
+  .link-container {
+    padding-bottom: 2rem !important;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .overlay {
+    height: 75%;
+    width: 45%;
+    margin: 2%;
+  }
+  .square {
+    padding: 3rem !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .overlay {
+    height: 90%;
+    width: 45%;
+    margin: 2%;
+  }
+  .square {
+    padding: 3rem !important;
   }
 }
 
 @media screen and (max-width: 768px) {
   .overlay {
-    height: 70%;
+    height: 80%;
     width: 90%;
     margin-top: 5% !important;
   }
@@ -94,7 +138,22 @@
     padding-bottom: 10px !important;
     font-weight: 600;
   }
+  .play {
+    display: none;
+  }
   .link-container {
     padding-top: 0 !important;
+  }
+}
+@media screen and (max-width: 320px) {
+  .overlay {
+    width: 95%;
+    margin-bottom: 10%;
+  }
+  .square {
+    padding: 1rem !important;
+  }
+  .card-content {
+    padding: 0% !important;
   }
 }
